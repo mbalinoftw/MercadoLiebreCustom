@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bienvenidxs a MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6bd1af9c32.js" crossorigin="anonymous"></script>
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #ebebeb;
+      }
+
+      .responsive-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        gap: 1rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 text-gray-600">
+    <header class="py-2 bg-yellow-300">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center gap-4 md:mb-4 md:justify-between">
+          <a href="/">
+            <img src="images/logo-mercado-liebre.svg" class="w-24 md:w-32" alt="" />
+          </a>
+          <form class="flex-1 md:flex-none md:w-96" action="" method="get">
+            <div class="relative">
+              <input class="p-1 pl-8 w-full rounded-sm" type="text" placeholder="Buscar productos, marcas y más..." />
+              <i class="absolute top-2 left-2 fa-solid fa-magnifying-glass"></i>
+            </div>
+          </form>
+          <div class="md:hidden">
+            <button class="">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+          </div>
+          <p class="hidden md:block text-sm">
+            <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito
+          </p>
+        </div>
+        <nav class="hidden md:flex items-center justify-between text-sm">
+          <ul class="flex gap-4">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+          <ul class="flex gap-4">
+            <li>
+              <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a>
+            </li>
+            <li>
+              <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            </li>
+            <li>
+              <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="">
+      <img class="w-full h-32 md:h-auto object-cover" src="images/img-home-banner.jpg" alt="Banner de ofertas" />
+    </section>
+
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="mb-4 text-2xl font-bold text-gray-800">Basado en tu última visita</h2>
+        <div class="responsive-grid">
+          <a href="#" class="">
+            <article class="transform hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+              <img src="images/img-cafetera-moulinex.jpg" alt="Cafetera" class="" />
+              <div class="relative p-4 flex flex-col bg-white border-t border-gray-300">
+                <div
+                  class="absolute w-10 h-10 lg:w-12 lg:h-12 grid place-items-center top-0 right-2 transform -translate-y-1/2 rounded-full bg-green-400"
+                >
+                  <i class="fas fa-truck text-white lg:text-2xl"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-800">$6.770</span>
+                <span class="text-green-600">40% off</span>
+                <span class="hidden md:block">Cafetera Moulinex</span>
+              </div>
+            </article>
+          </a>
+          <a href="#" class="">
+            <article class="transform hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+              <img src="images/img-macbook-pro-2019.jpg" alt="Macbook Pro 2019" class="" />
+              <div class="relative p-4 flex flex-col bg-white border-t border-gray-300">
+                <div
+                  class="absolute w-10 h-10 lg:w-12 lg:h-12 grid place-items-center top-0 right-2 transform -translate-y-1/2 rounded-full bg-green-400"
+                >
+                  <i class="fas fa-truck text-white lg:text-2xl"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-800">$230.000</span>
+                <span class="text-green-600">20% off</span>
+                <span class="hidden md:block">MacBook Pro 2019</span>
+              </div>
+            </article>
+          </a>
+          <a href="#" class="">
+            <article class="transform hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+              <img src="images/img-samsung-galaxy-s10.jpg" alt="Samsung Galaxy S10" class="" />
+              <div class="relative p-4 flex flex-col bg-white border-t border-gray-300">
+                <div
+                  class="absolute w-10 h-10 lg:w-12 lg:h-12 grid place-items-center top-0 right-2 transform -translate-y-1/2 rounded-full bg-green-400"
+                >
+                  <i class="fas fa-truck text-white lg:text-2xl"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-800">$70.500</span>
+                <span class="text-green-600">10% off</span>
+                <span class="hidden md:block">Samsung Galaxy S10</span>
+              </div>
+            </article>
+          </a>
+          <a href="#" class="">
+            <article class="transform hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+              <img src="images/img-tv-samsung-smart.jpg" alt="Smart TV Samsung" class="" />
+              <div class="relative p-4 flex flex-col bg-white border-t border-gray-300">
+                <div
+                  class="absolute w-10 h-10 lg:w-12 lg:h-12 grid place-items-center top-0 right-2 transform -translate-y-1/2 rounded-full bg-green-400"
+                >
+                  <i class="fas fa-truck text-white lg:text-2xl"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-800">$23.200</span>
+                <span class="text-green-600">5% off</span>
+                <span class="hidden md:block">Smart TV Samsung 43"</span>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <h2 class="mb-4 text-2xl font-bold text-gray-800">Ofertas destacadas</h2>
+        <div class="responsive-grid">
+          <a href="#" class="">
+            <article class="transform hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+              <img src="images/img-aire-acondicionado.jpg" alt="Aire acondicionado" class="" />
+              <div class="relative p-4 flex flex-col bg-white border-t border-gray-300">
+                <div
+                  class="absolute w-10 h-10 lg:w-12 lg:h-12 grid place-items-center top-0 right-2 transform -translate-y-1/2 rounded-full bg-green-400"
+                >
+                  <i class="fas fa-truck text-white lg:text-2xl"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-800">$62.000</span>
+                <span class="text-green-600">20% off</span>
+                <span class="hidden md:block">Aire Acondicionado BGH</span>
+              </div>
+            </article>
+          </a>
+          <a href="#" class="">
+            <article class="transform hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+              <img src="images/img-lavarropas.jpg" alt="Lavarropas" class="" />
+              <div class="relative p-4 flex flex-col bg-white border-t border-gray-300">
+                <div
+                  class="absolute w-10 h-10 lg:w-12 lg:h-12 grid place-items-center top-0 right-2 transform -translate-y-1/2 rounded-full bg-green-400"
+                >
+                  <i class="fas fa-truck text-white lg:text-2xl"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-800">$183.000</span>
+                <span class="text-green-600">15% off</span>
+                <span class="hidden md:block">Lavarropas Whirlpool</span>
+              </div>
+            </article>
+          </a>
+          <a href="#" class="">
+            <article class="transform hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+              <img src="images/img-smartband-xiaomi.jpg" alt="Xiaomi Smartband" class="" />
+              <div class="relative p-4 flex flex-col bg-white border-t border-gray-300">
+                <div
+                  class="absolute w-10 h-10 lg:w-12 lg:h-12 grid place-items-center top-0 right-2 transform -translate-y-1/2 rounded-full bg-green-400"
+                >
+                  <i class="fas fa-truck text-white lg:text-2xl"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-800">$6.900</span>
+                <span class="text-green-600">25% off</span>
+                <span class="hidden md:block">Xiaomi Smartband</span>
+              </div>
+            </article>
+          </a>
+          <a href="#" class="">
+            <article class="transform hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
+              <img src="images/img-parlantes-jbl.jpg" alt="Parlantes JBL" class="" />
+              <div class="relative p-4 flex flex-col bg-white border-t border-gray-300">
+                <div
+                  class="absolute w-10 h-10 lg:w-12 lg:h-12 grid place-items-center top-0 right-2 transform -translate-y-1/2 rounded-full bg-green-400"
+                >
+                  <i class="fas fa-truck text-white lg:text-2xl"></i>
+                </div>
+                <span class="text-2xl font-bold text-gray-800">$130.400</span>
+                <span class="text-green-600">10% off</span>
+                <span class="hidden md:block">Parlantes JBL</span>
+              </div>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white">
+      <div class="container mx-auto px-4">
+        <div class="py-10 flex flex-col md:flex-row gap-6 text-center">
+          <div>
+            <i class="fas fa-credit-card text-5xl text-blue-500 mb-4"></i>
+            <h3 class="text-gray-800">Pagá con tarjeta o en efectivo</h3>
+            <p class="text-gray-400">
+              Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+              seguro!
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-gift text-5xl text-blue-500 mb-4"></i>
+            <h3 class="text-gray-800">Envío gratis desde $ 2.500</h3>
+            <p class="text-gray-400">
+              Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+              Mercado Puntos.
+            </p>
+          </div>
+          <div>
+            <i class="fas fa-user-shield text-5xl text-blue-500 mb-4"></i>
+            <h3 class="text-gray-800">Seguridad, de principio a fin</h3>
+            <p class="text-gray-400">
+              ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+              protegid@.
+            </p>
+          </div>
+        </div>
+        <p class="py-2 border-t text-center">Copyright © 1999-2022 MercadoLiebre S.R.L.</p>
+      </div>
+    </footer>
+  </body>
+</html>

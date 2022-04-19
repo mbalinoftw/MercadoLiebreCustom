@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bienvenidxs a MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6bd1af9c32.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-gray-100">
+    <header class="py-2 bg-yellow-300">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center gap-4 md:mb-4 md:justify-between">
+          <a href="/" class="w-32">
+            <img src="images/logo-mercado-liebre.svg" alt="" />
+          </a>
+          <form class="flex-1 md:flex-none md:w-96" action="" method="get">
+            <div class="relative">
+              <input class="p-1 pl-8 w-full rounded-sm" type="text" placeholder="Buscar productos, marcas y más..." />
+              <i class="absolute top-2 left-2 fa-solid fa-magnifying-glass text-gray-300"></i>
+            </div>
+          </form>
+          <div class="md:hidden">
+            <button class="">
+              <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+            <button class="">
+              <i class="fa-solid fa-cart-shopping text-gray-800"></i>
+            </button>
+          </div>
+          <p class="hidden md:block text-sm">
+            <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito
+          </p>
+        </div>
+        <nav class="hidden md:flex items-center justify-between text-sm">
+          <ul class="flex gap-4">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+          <ul class="flex gap-4">
+            <li>
+              <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a>
+            </li>
+            <li>
+              <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            </li>
+            <li>
+              <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="">
+      <div class="container mx-auto px-4">
+        <form class="my-10 p-10 max-w-screen-md mx-auto flex flex-col gap-6 bg-white rounded-md shadow-md" action="/" method="post">
+          <div class="flex flex-col gap-4">
+            <input
+                id="user"
+                type="text"
+                class="p-1 rounded-md border"
+                placeholder="Usuario"
+                name="user"
+              />
+              <input
+                id="password"
+                type="password"
+                class="p-1 rounded-md border"
+                placeholder="Contraseña"
+                name="password"
+              />
+              <a href="#" class="relative transform -translate-y-2 text-right text-sm">Olvidé mi contraseña</a>
+              <input type="submit" class="flex-1 text-sm px-6 py-3 bg-blue-400 hover:bg-blue-300 text-white rounded-md uppercase tracking-wider transition-color duration-300 cursor-pointer" value="Iniciar sesión" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

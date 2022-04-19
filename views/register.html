@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Bienvenidxs a MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/6bd1af9c32.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-gray-100">
+    <header class="py-2 bg-yellow-300">
+      <div class="container mx-auto px-4">
+        <div class="flex items-center gap-4 md:mb-4 md:justify-between">
+          <a href="/" class="w-32">
+            <img src="images/logo-mercado-liebre.svg" alt="" />
+          </a>
+          <form class="flex-1 md:flex-none md:w-96" action="" method="get">
+            <div class="relative">
+              <input class="p-1 pl-8 w-full rounded-sm" type="text" placeholder="Buscar productos, marcas y más..." />
+              <i class="absolute top-2 left-2 fa-solid fa-magnifying-glass text-gray-300"></i>
+            </div>
+          </form>
+          <div class="md:hidden">
+            <button class="">
+              <i class="fa-solid fa-bars text-gray-800"></i>
+            </button>
+            <button class="">
+              <i class="fa-solid fa-cart-shopping text-gray-800"></i>
+            </button>
+          </div>
+          <p class="hidden md:block text-sm">
+            <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito
+          </p>
+        </div>
+        <nav class="hidden md:flex items-center justify-between text-sm">
+          <ul class="flex gap-4">
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Tiendas Oficiales</a></li>
+            <li><a href="#">Vender</a></li>
+            <li><a href="#">Ayuda</a></li>
+          </ul>
+          <ul class="flex gap-4">
+            <li>
+              <a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a>
+            </li>
+            <li>
+              <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+            </li>
+            <li>
+              <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="">
+      <div class="container mx-auto px-4">
+        <form class="my-10 p-10 max-w-screen-md mx-auto flex flex-col gap-6 bg-white rounded-md shadow-md" action="/" method="post">
+          <div class="flex flex-col gap-4">
+            <h2 class="text-lg font-bold">Registro</h2>
+            <input id="nombre" type="text" class="p-1 rounded-md border" placeholder="Nombre y apellido" name="nombre" />
+            <input
+              id="user"
+              type="text"
+              class="p-1 rounded-md border"
+              placeholder="Nombre de usuario"
+              name="user"
+            />
+            <input id="email" type="email" class="p-1 rounded-md border" placeholder="E-mail" />
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="text-lg font-bold">Fecha de nacimiento</h2>
+            <input id="date" type="date" class="p-1 rounded-md border" />
+            <input id="address" type="text" class="p-1 rounded-md border" placeholder="Domicilio" name="address" />
+            <h2 class="text-lg font-bold">Perfil del usuario</h2>
+            <div class="flex items-center gap-4">
+              <input type="radio" name="profile" id="buyer" />
+              <label for="buyer">Comprador</label>
+              <input type="radio" name="profile" id="seller" />
+              <label for="seller">Vendedor</label>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="text-lg font-bold">Intereses</h2>
+            <div class="flex items-center gap-2">
+              <input type="checkbox" name="electro" id="electro" value="electro" />
+              <label for="electro">Electro</label>
+            </div>
+            <div class="flex items-center gap-2">
+              <input type="checkbox" name="fashion" id="fashion" value="moda" />
+              <label for="fashion">Moda</label>
+            </div>
+            <div class="flex items-center gap-2">
+              <input type="checkbox" name="home" id="home" value="hogar" />
+              <label for="home">Hogar</label>
+            </div>
+            <div class="flex items-center gap-2">
+              <input type="checkbox" name="toys" id="toys" value="jugueteria" />
+              <label for="toys">Juguetería</label>
+            </div>
+            <div class="flex items-center gap-2">
+              <input type="checkbox" name="fitness" id="fitness" value="vida-sana" />
+              <label for="fitness">Vida sana</label>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h2 class="text-lg font-bold">
+              Subí tu foto
+            </h2>
+            <input type="file" name="" id="" />
+          </div>
+          <h2 class="text-lg font-bold">
+            Contraseña
+          </h2>
+          <input
+            class="p-1 border rounded-md"
+            type="password"
+            name="password1"
+            id="password1"
+            placeholder="Ingresar contraseña"
+          />
+          <input
+            class="p-1 border rounded-md"
+            type="password"
+            name="password2"
+            id="password2"
+            placeholder="Repetir contraseña"
+          />
+          <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <input type="submit" class="flex-1 text-sm px-6 py-3 bg-blue-400 hover:bg-blue-300 text-white rounded-md uppercase tracking-wider transition-color duration-300 cursor-pointer" value="Enviar" />
+            <input type="reset" class="flex-1 text-sm px-6 py-3 bg-red-400 hover:bg-red-300 text-white rounded-md uppercase tracking-wider transition-color duration-300 cursor-pointer" value="Borrar" />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
